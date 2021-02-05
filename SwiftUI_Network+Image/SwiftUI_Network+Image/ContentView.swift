@@ -8,9 +8,35 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var users = [User]()
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            ScrollView {
+                LazyVGrid(columns: [GridItem(.flexible())], content: {
+                    ForEach(users) { user in
+                        
+                        NavigationLink(
+                            destination: UserDetailView(user: user),
+                            label: {
+                                HStack {
+                                    URLImage(urlString: user.avatar)
+                                    Text("\(user.name)")
+                                    Spacer()
+                                }
+                            })
+                    }
+                })
+            }
+            .navigationBarTitle("User List", displayMode: .large)
+        }
+        
+        .onAppear {
+            WebService().loadUsers { users in
+                self.users = users
+            }
+        }
     }
 }
 

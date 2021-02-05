@@ -11,6 +11,8 @@
 		E917803C25CCD65300A9617D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E917803B25CCD65300A9617D /* ContentView.swift */; };
 		E917803E25CCD65500A9617D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E917803D25CCD65500A9617D /* Assets.xcassets */; };
 		E917804125CCD65500A9617D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E917804025CCD65500A9617D /* Preview Assets.xcassets */; };
+		E917804A25CCD66600A9617D /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E917804925CCD66600A9617D /* WebService.swift */; };
+		E917804D25CCDD3100A9617D /* UserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E917804C25CCDD3100A9617D /* UserDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		E917803D25CCD65500A9617D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E917804025CCD65500A9617D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E917804225CCD65500A9617D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E917804925CCD66600A9617D /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		E917804C25CCDD3100A9617D /* UserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 			children = (
 				E917803925CCD65300A9617D /* SwiftUI_Network_ImageApp.swift */,
 				E917803B25CCD65300A9617D /* ContentView.swift */,
+				E917804925CCD66600A9617D /* WebService.swift */,
+				E917804C25CCDD3100A9617D /* UserDetailView.swift */,
 				E917803D25CCD65500A9617D /* Assets.xcassets */,
 				E917804225CCD65500A9617D /* Info.plist */,
 				E917803F25CCD65500A9617D /* Preview Content */,
@@ -138,6 +144,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E917804D25CCDD3100A9617D /* UserDetailView.swift in Sources */,
+				E917804A25CCD66600A9617D /* WebService.swift in Sources */,
 				E917803C25CCD65300A9617D /* ContentView.swift in Sources */,
 				E917803A25CCD65300A9617D /* SwiftUI_Network_ImageApp.swift in Sources */,
 			);

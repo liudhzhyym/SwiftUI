@@ -6,3 +6,20 @@
 //
 
 import Foundation
+import SwiftUI
+
+
+struct UserDetailView: View {
+    
+    var user: User
+    
+    var body: some View {
+        VStack {
+            URLImage(urlString: user.avatar)
+            Text(user.name)
+                .font(.largeTitle)
+                .bold()
+            Text(user.createdAt)
+        }
+    }
+}
