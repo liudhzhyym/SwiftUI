@@ -17,7 +17,7 @@ struct ContentView: View {
             
             CircularProgressBar(progress: $progress)
         }
-        .padding(25)
+        .padding(20)
     }
 }
 
